@@ -1,0 +1,29 @@
+{
+  "name": "ppim1trabalho1",
+  "version": "1.0.0",
+  "description": "Trabalho de PPI GitHub/NodeJS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WillianFlorentino/PPIM1Trabalho1.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "javascript",
+    "programação",
+    "aula",
+    "ead"
+  ],
+  "author": "Willian Florentino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WillianFlorentino/PPIM1Trabalho1/issues"
+  },
+  "homepage": "https://github.com/WillianFlorentino/PPIM1Trabalho1#readme"
+}
