@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/WillianFlorentino/PPIM1Trabalho1/issues"
   },
-  "homepage": "https://github.com/WillianFlorentino/PPIM1Trabalho1#readme"
+  "homepage": "https://github.com/WillianFlorentino/PPIM1Trabalho1#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
