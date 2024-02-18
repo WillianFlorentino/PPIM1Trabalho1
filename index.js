@@ -24,7 +24,7 @@ app.use(session({
 app.post('/login', (requisicao, resposta)=>{
     const usuario = requisicao.body.usuario;
     const senha = requisicao.body.senha;
-    if (usuario && senha && usuario === 'nkas' && senha === 'nkas123'){
+    if (usuario && senha && usuario === 'jaum' && senha === 'jaum123'){
         requisicao.session.usuarioLogado = true;
         resposta.redirect('/cadastro.html');
     }
