@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -32,47 +32,51 @@
 <!-- Start wrapper-->
  <div id="wrapper">
 
- <div class="loader-wrapper"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
-	<div class="card card-authentication1 mx-auto my-5">
+	<div class="card card-authentication1 mx-auto my-4">
 		<div class="card-body">
 		 <div class="card-content p-2">
 		 	<div class="text-center">
 		 		<img src="assets/images/pngtree-music-logo-png-image_6389182.jpeg" alt="logo icon">
 		 	</div>
-		  <div class="card-title text-uppercase text-center py-3">Entrar</div>
-
-		    <form id="formLogin" method="post" action="/login">
+		  <div class="card-title text-uppercase text-center py-3">Cadastrar</div>
+		    <form>
 			  <div class="form-group">
-			  <label for="exampleInputUsername" class="sr-only">Username</label>
+			  <label for="exampleInputName" class="sr-only">Name</label>
 			   <div class="position-relative has-icon-right">
-				  <input type="text" id="exampleInputUsername" name="usuario" class="form-control input-shadow" placeholder="Digite o Usuário">
+				  <input type="text" id="exampleInputName" class="form-control input-shadow" placeholder="Digite seu Nome">
 				  <div class="form-control-position">
 					  <i class="icon-user"></i>
 				  </div>
 			   </div>
 			  </div>
 			  <div class="form-group">
-			  <label for="exampleInputPassword" class="sr-only">Password</label>
+			  <label for="exampleInputEmailId" class="sr-only">Email ID</label>
 			   <div class="position-relative has-icon-right">
-				  <input type="password" id="exampleInputPassword" name="senha" class="form-control input-shadow" placeholder="Digite a Senha">
+				  <input type="email" id="exampleInputEmailId" class="form-control input-shadow" placeholder="Digite seu E-mail">
+				  <div class="form-control-position">
+					  <i class="icon-envelope-open"></i>
+				  </div>
+			   </div>
+			  </div>
+			  <div class="form-group">
+			   <label for="exampleInputPassword" class="sr-only">Password</label>
+			   <div class="position-relative has-icon-right">
+				  <input type="password" id="exampleInputPassword" class="form-control input-shadow" placeholder="Escolha sua Senha">
 				  <div class="form-control-position">
 					  <i class="icon-lock"></i>
 				  </div>
 			   </div>
 			  </div>
-			<div class="form-row">
-			 <div class="form-group col-6">
-			   <div class="icheck-material-white">
-                <input type="checkbox" id="user-checkbox" checked="" />
-                <label for="user-checkbox">Lembrar</label>
-			  </div>
-			 </div>
-			 <div class="form-group col-6 text-right">
-			  <a href="reset-password.html">Resetar Senha</a>
-			 </div>
-			</div>
-			 <button type="submit" class="btn btn-light btn-block">Entrar</button>
-			  <div class="text-center mt-3">Entrar Com</div>
+			  
+			   <div class="form-group">
+			     <div class="icheck-material-white">
+                   <input type="checkbox" id="user-checkbox" checked="" />
+                   <label for="user-checkbox">Concordo com os Termos e Condições</label>
+			     </div>
+			    </div>
+			  
+			 <button type="button" class="btn btn-light btn-block waves-effect waves-light">Cadastrar</button>
+			  <div class="text-center mt-3">Cadastrar Com</div>
 			  
 			 <div class="form-row mt-4">
 			  <div class="form-group mb-0 col-6">
@@ -82,12 +86,12 @@
 			  <button type="button" class="btn btn-light btn-block"><i class="fa fa-twitter-square"></i> Twitter</button>
 			 </div>
 			</div>
-			 
+			
 			 </form>
 		   </div>
 		  </div>
 		  <div class="card-footer text-center py-3">
-		    <p class="text-warning mb-0">Não tem uma Conta? <a href="forms.html"> Cadastre Aqui</a></p>
+		    <p class="text-warning mb-0">Já tem uma Conta? <a href="login.html"> Faça Login Aqui</a></p>
 		  </div>
 	     </div>
     
@@ -139,8 +143,6 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-  <script src="./scripts/scriptLogin.js"></script>
- 
 	
   <!-- sidebar-menu js -->
   <script src="assets/js/sidebar-menu.js"></script>
@@ -149,7 +151,6 @@
   <script src="assets/js/app-script.js"></script>
     <!-- Index js -->
     <script src="assets/js/index.js"></script>
-
   
 </body>
 </html>
