@@ -12791,6 +12791,12 @@ File: app-style
   background-image: url(../flags/1x1/un.svg);
 }
 
+#item{
+  width: 60px;
+  color: white;
+  text-align: center;
+  background-color: transparent;
+}
 
 
 

@@ -177,3 +177,28 @@ campos.forEach(campo => {
         }
     });
 });
+
+
+const itemInput = document.getElementById('item');
+        const totalSpan = document.getElementById('total');
+        const valorItem = 1400;
+
+        itemInput.addEventListener('input', function() {
+            const quantidade = parseInt(itemInput.value);
+            const total = quantidade * valorItem;
+            totalSpan.textContent = `R$ ${total.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+        });
+
+		document.getElementById("btnComprar").addEventListener("click", function() {
+            alert("Compra efetuada!");
+        });
+
+		document.getElementById("btnRegistrar").addEventListener("click", function() {
+            alert("Cadastro realizado!");
+        });
+
+
+
+
+
+	

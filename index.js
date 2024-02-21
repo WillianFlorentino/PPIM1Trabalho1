@@ -24,9 +24,9 @@ app.use(session({
 app.post('/login', (requisicao, resposta)=>{
     const usuario = requisicao.body.usuario;
     const senha = requisicao.body.senha;
-    if (usuario && senha && usuario === 'jaum' && senha === 'jaum123'){
+    if (usuario && senha && usuario === 'will' && senha === 'will123'){
         requisicao.session.usuarioLogado = true;
-        resposta.redirect('/index.html');
+        resposta.redirect('/index1.html');
     }
     else{
         resposta.redirect('/login.html');

@@ -54,13 +54,6 @@
       </li>
 
 
-
-      <li>
-        <a href="forms.html">
-          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Cadastrar Banda</span>
-        </a>
-      </li>
-
       <li>
         <a href="tables.html">
           <i class="zmdi zmdi-grid"></i> <span>Eventos</span>
@@ -81,7 +74,7 @@
       </li>
 
        <li>
-        <a href="register.html" target="_blank">
+        <a href="forms.html" target="_blank">
           <i class="zmdi zmdi-account-circle"></i> <span>Cadastrar</span>
         </a>
       </li>
@@ -130,28 +123,22 @@
     </li>
     <li class="nav-item">
       <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
-        <span class="user-profile"><img src="assets/images/fotoport.jpeg" class="img-circle" alt="user avatar"></span>
+        <span class="user-profile"><img src="assets/images/pngtree-user-login-or-authenticate-icon-on-gray-background-flat-icon-ve-png-image_1786166.png" class="img-circle" alt="user avatar"></span>
       </a>
       <ul class="dropdown-menu dropdown-menu-right">
        <li class="dropdown-item user-details">
         <a href="javaScript:void();">
            <div class="media">
-             <div class="avatar"><img class="align-self-start mr-3" src="assets/images/fotoport.jpeg" alt="user avatar"></div>
+             <div class="avatar"><img class="align-self-start mr-3" src="assets/images/pngtree-user-login-or-authenticate-icon-on-gray-background-flat-icon-ve-png-image_1786166.png" alt="user avatar"></div>
             <div class="media-body">
-            <h6 class="mt-2 user-title">Willian Florentino</h6>
-            <p class="user-subtitle">williandimi11@gmail.com</p>
+            <h6 class="mt-2 user-title">Usuário</h6>
+            <p class="user-subtitle">E-mail</p>
             </div>
            </div>
           </a>
         </li>
         <li class="dropdown-divider"></li>
-        <li class="dropdown-item"><i class="icon-envelope mr-2"></i> Inbox</li>
-        <li class="dropdown-divider"></li>
-        <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Account</li>
-        <li class="dropdown-divider"></li>
         <li class="dropdown-item"><i class="icon-settings mr-2"></i> Setting</li>
-        <li class="dropdown-divider"></li>
-        <li class="dropdown-item"><i class="icon-power mr-2"></i> Logout</li>
       </ul>
     </li>
   </ul>
@@ -167,13 +154,18 @@
       <div class="col-lg-6">
          <div class="card">
            <div class="card-body">
-           <div class="card-title">Formulário de Cantor/Banda</div>
+           <div class="card-title">Cadastro de Usuário</div>
            <hr>
             <form>
 
            <div class="form-group">
-            <label for="input-1">Nome Artístico ou Banda</label>
+            <label for="input-1">Nome Completo</label>
             <input type="text" class="form-control" id="input-1" placeholder="Digite o Nome" required> 
+           </div>
+
+           <div class="form-group">
+            <label for="input-1">Usuário</label>
+            <input type="text" class="form-control" id="input-1" placeholder="Digite o Usuário" required> 
            </div>
 
            <div class="form-group">
@@ -197,7 +189,7 @@
            </div>
 
            <div class="form-group">
-           <label for="quantidade" id="quant">Integrantes:</label>
+           <label for="quantidade" id="quant">Idade:</label>
            <input type="number" id="number" name="nome" required>
           </div>
 
@@ -262,7 +254,7 @@
             </div>
            </div>
            <div class="form-group">
-            <button type="submit" class="btn btn-light px-5"><i class="icon-lock"></i> Registrar</button>
+            <button id="btnRegistrar" type="submit" class="btn btn-light px-5"><i class="icon-lock"></i> Registrar</button>
           </div>
           </form>
          </div>

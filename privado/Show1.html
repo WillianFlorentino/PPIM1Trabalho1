@@ -36,14 +36,22 @@
 		<div class="card-body">
 		 <div class="card-content p-2">
 		 	<div class="text-center">
-		 		<img src="assets/images/pngtree-music-logo-png-image_6389182.jpeg" alt="logo icon">
+		 		<img src="assets/images/postmalone.jpeg" height="200" alt="logo icon">
 		 	</div>
-		  <div class="card-title text-uppercase text-center py-3">Cadastrar</div>
-		    <form>
+       <div class="card-title text-uppercase text-center py-3" style="text-align: justify !important;">
+        Post Malone é tão versátil quanto as playlists da geração Z, os nascidos nos anos 2000. Nova-iorquino criado no Texas, ele começou no hip-hop e no trap, mas já dominou as rádios com pop e faixas acústicas e animou a quarentena contra a Covid com covers do Nirvana. Malone começou a se dedicar ao hip-hop aos 16 anos.
+    </div>    
+    <form>
+      <form>
 			  <div class="form-group">
 			  <label for="exampleInputName" class="sr-only">Name</label>
-			   <div class="position-relative has-icon-right">
-				  <input type="text" id="exampleInputName" class="form-control input-shadow" placeholder="Digite seu Nome">
+			   <h1>Informações</h1>
+                <td>Local do Show: Avenida Brasil</td><br>
+                <td>Idade: +18</td><br>
+                <td>Valor Ingresso: R$1.400,00</td>
+                <td>Data: 15/03/2024</td>
+                <td>Horário da Entrada: 22h</td>
+				  
 				  <div class="form-control-position">
 					  <i class="icon-user"></i>
 				  </div>
@@ -52,18 +60,13 @@
 			  <div class="form-group">
 			  <label for="exampleInputEmailId" class="sr-only">Email ID</label>
 			   <div class="position-relative has-icon-right">
-				  <input type="email" id="exampleInputEmailId" class="form-control input-shadow" placeholder="Digite seu E-mail">
+                <label for="item">Quantidade de Ingressos:</label><br>
+                <input type="number" id="item" value="0" min="0" ><br><br>
+                
+                <label for="total">Total:</label>
+                <span id="total">R$ 0,00</span>
 				  <div class="form-control-position">
-					  <i class="icon-envelope-open"></i>
-				  </div>
-			   </div>
-			  </div>
-			  <div class="form-group">
-			   <label for="exampleInputPassword" class="sr-only">Password</label>
-			   <div class="position-relative has-icon-right">
-				  <input type="password" id="exampleInputPassword" class="form-control input-shadow" placeholder="Escolha sua Senha">
-				  <div class="form-control-position">
-					  <i class="icon-lock"></i>
+					  <i class="icon-money"></i>
 				  </div>
 			   </div>
 			  </div>
@@ -75,23 +78,12 @@
 			     </div>
 			    </div>
 			  
-			 <button type="button" class="btn btn-light btn-block waves-effect waves-light">Cadastrar</button>
-			  <div class="text-center mt-3">Cadastrar Com</div>
+			 <button id="btnComprar" type="button" class="btn btn-light btn-block waves-effect waves-light">Comprar</button>
 			  
-			 <div class="form-row mt-4">
-			  <div class="form-group mb-0 col-6">
-			   <button type="button" class="btn btn-light btn-block"><i class="fa fa-facebook-square"></i> Facebook</button>
-			 </div>
-			 <div class="form-group mb-0 col-6 text-right">
-			  <button type="button" class="btn btn-light btn-block"><i class="fa fa-twitter-square"></i> Twitter</button>
-			 </div>
-			</div>
+
 			
 			 </form>
 		   </div>
-		  </div>
-		  <div class="card-footer text-center py-3">
-		    <p class="text-warning mb-0">Já tem uma Conta? <a href="login.html"> Faça Login Aqui</a></p>
 		  </div>
 	     </div>
     
@@ -152,5 +144,6 @@
     <!-- Index js -->
     <script src="assets/js/index.js"></script>
   
+    <script src="publico/assets/js/index.js"></script>
 </body>
 </html>
