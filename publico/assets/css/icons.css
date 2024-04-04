@@ -12798,6 +12798,11 @@ File: app-style
   background-color: transparent;
 }
 
+.estilizar{
+  display: flex;
+}
+
+
 
 
 

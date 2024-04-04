@@ -71,20 +71,7 @@
         <a href="login.html" target="_blank">
           <i class="zmdi zmdi-lock"></i> <span>Entrar</span>
         </a>
-      </li>
-
-       <li>
-        <a href="forms.html" target="_blank">
-          <i class="zmdi zmdi-account-circle"></i> <span>Cadastrar</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="Eventoo.html" target="_blank">
-          <i class="zmdi zmdi-account-circle"></i> <span>Cadastrar Evento</span>
-        </a>
-      </li>
-	  
+      </li>	  
 
     </ul>
    
@@ -156,130 +143,157 @@
   <div class="content-wrapper">
     <div class="container-fluid">
 
-    <div class="row mt-3">
+    <div class="row mt-6">
       <div class="col-lg-6">
          <div class="card">
            <div class="card-body">
-           <div class="card-title">Cadastro de Usuário</div>
+           <div class="card-title">Cadastro de Evento</div>
            <hr>
-            <form>
+            <form id="formEventoo" method="POST" action="#" class="row g-3 needs-validation" novalidate>
+             
+             
+            <div class="form-group">
+              <div class="col-md-5">
+              <label for="input-3">Código</label>
+              <input type="text" class="form-control" name="codigo" id="codigo" disabled >
+              <div class="invalid-feedback">
+                Favor informar o Código!
+              </div>
+              </div>
+               </div>
 
             <div class="form-group">
+              <div class="col-md-12">
              <label for="input-3">CPF</label>
-             <input type="text" class="form-control" name="cpf" id="input-3" placeholder="Digite seu CPF" required>
-            </div>
-
-            <div class="form-group">
-              <label for="input-3">RG</label>
-              <input type="text" class="form-control" name="rg" maxlength="10" id="input-3" placeholder="Digite RG do Representante" required>
+             <input type="text" class="form-control" name="cpf" id="cpf" placeholder="Digite seu CPF" required>
+             <div class="invalid-feedback">
+                Favor informar o CPF!
+              </div>
              </div>
+            </div>
 
            <div class="form-group">
             <label for="input-1">Nome Completo</label>
-            <input type="text" class="form-control" id="input-1" placeholder="Digite o Nome" required> 
+            <input type="text" class="form-control" id="nome" placeholder="Digite o Nome" required> 
+            <div class="invalid-feedback">
+                Favor informar o Nome!
+             </div>
            </div>
 
            <div class="form-group">
-            <label for="input-1">Usuário</label>
-            <input type="text" class="form-control" id="input-1" placeholder="Digite o Usuário" required> 
+            <div class="col-md-11">
+            <label for="input-1">Cantor</label>
+            <input type="text" class="form-control" id="cantor" placeholder="Digite o nome de Cantor" required> 
+            <div class="invalid-feedback">
+                Favor informar o Nome de Cantor!
+              </div>
+             </div>
            </div>
 
            <div class="form-group">
+            <div class="col-md-12">
             <label for="input-2">Endereço</label>
-            <input type="email" class="form-control" id="input-2" placeholder="Digite seu Endereço" required>
+            <input type="text" class="form-control" id="endereco" placeholder="Digite seu Endereço" required>
+            <div class="invalid-feedback">
+                Favor informar o Endereço!
+              </div>
+             </div>
            </div>
 
            <div class="form-group">
             <label for="input-2">Bairro</label>
-            <input type="email" class="form-control" id="input-2" placeholder="Digite seu Bairro" required>
+            <input type="text" class="form-control" id="bairro" placeholder="Digite seu Bairro" required>
+            <div class="invalid-feedback">
+                Favor informar o Bairro!
+             </div>
            </div>
 
            <div class="form-group">
             <label for="input-2">Cidade</label>
-            <input type="email" class="form-control" id="input-2" placeholder="Digite sua Cidade" required>
+            <input type="text" class="form-control" id="cidade" placeholder="Digite sua Cidade" required>
+            <div class="invalid-feedback">
+                Favor informar a Cidade!
+             </div>
            </div>
 
 
+           <div class="col-lg-3">
+            <label for="input-2">Estado</label>
+            <input class="form-control" type="text" id="uf" name="uf" maxlength="2" oninput="this.value = this.value.replace(/[0-9]/g, '')" value="" placeholder="UF" required> <br>
+            <div class="invalid-feedback">
+                Favor informar o Estado!
+             </div>
+        </div>
            
            <div class="form-group">
             <label for="input-3">Telefone</label>
-            <input type="text" class="form-control" name="tel" id="input-3" placeholder="Digite seu Telefone" required>
+            <input type="text" class="form-control" name="tel" id="telefone" placeholder="Digite seu Telefone" required>
+            <div class="invalid-feedback">
+                Favor informar o Telefone!
+             </div>
            </div>
 
-
-
            <div class="form-group">
-           <label for="quantidade" id="quant">Idade:</label>
-           <input type="number" id="number" name="nome" required>
+           <label for="input-3">Idade:</label> 
+           <!-- id "quant"  -->
+           <input type="text" id="idade" name="nome" required>
+           <div class="invalid-feedback">
+            Favor informar sua Idade!
+         </div>
           </div>
 
           <div class="form-group">
-          <label for="interests">Estilo Musical</label> <br>
-          <input type="checkbox" id="golfe" name="interests" value="golfe">
-          <label for="golfe">Hip-Hop</label> <br>
-          <input type="checkbox" id="basquete" name="interests" value="basquete">
-          <label for="basquete">Rap</label> <br>
-          <input type="checkbox" id="basquete" name="interests" value="basquete">
-          <label for="basquete">Pop Rock</label> <br>
-            </div>
+            <div class="col-md-11">
+            <label for="valor-ingresso">Valor Ingresso</label>
+            <input type="text" class="form-control" id="valor_ingresso" placeholder="Digite o valor do ingresso" required>
+            <div class="invalid-feedback">
+                Favor informar o Valor do Ingresso!
+              </div>
+             </div>
+          </div>
+          
 
-           
-            <label for="forn">País:</label>
-            <select id="forn" name="forn">
-                <option value="cc">Brasil</option>
-                <option value="si">Estados Unidos</option>
-                <option value="si">México</option>
-                <option value="si">Inglaterra</option>
-                <option value="si">Alemanha</option>
-                <option value="si">França</option>
-                <option value="si">China</option>
-                <option value="si">Canadá</option>
-                <br>
-             </select>
 
              <div class="form-group">
+              <div class="col-md-11">
               <label for="input-2">E-mail</label>
-              <input type="email" class="form-control" id="input-2" placeholder="Digite seu E-mail" required>
+              <input type="email" class="form-control" id="email" placeholder="Digite seu E-mail" required>
+              <div class="invalid-feedback">
+                Favor informar o E-mail!
+              </div>
+             </div>
              </div>
 
-         <div class="form-group">
-                <label for="input-3">CEP</label>
-                <input type="text" class="form-control" name="cep" id="input-3" placeholder="Digite CEP do Representante" required>
-          </div>
 
-          <div class="col-lg-3">
-            <input class="form-control" type="text" name="uf" maxlength="2" oninput="this.value = this.value.replace(/[0-9]/g, '')" value="" placeholder="UF"> <br>
-        </div>
-
-
-
-           <div class="form-group">
-            <label for="input-4">Senha</label>
-            <input type="password" class="form-control" id="input-4" placeholder="Digite sua Senha">
-           </div>
-           <div class="form-group">
-            <label for="input-5">Confirme a Senha</label>
-            <input type="password" class="form-control" id="input-5" placeholder="Confirme sua Senha">
-           </div>
-
-           <div class="form-group">
-           <label for="data">Data de Cadastro:</label>
-           <input id="data" type="date" name="data" maxlength="8" class="meuCampo" />
-          </div>
-
-           <div class="form-group">
-           <label for="mensagem ">Informações Adicionais:</label>
-           <textarea id="mensagem " name="mensagem "  rows="4 "></textarea>
-          </div>
-
-           <div class="form-group py-2">
+           <!-- <div class="form-group py-2">
              <div class="icheck-material-white">
             <input type="checkbox" id="user-checkbox1" checked=""/>
             <label for="user-checkbox1">Eu Concordo Com os Termos e Condições</label>
             </div>
-           </div>
-           <div class="form-group">
-            <button id="btnRegistrar" type="submit" class="btn btn-light px-5"><i class="icon-lock"></i> Registrar</button>
+           </div> -->
+
+           <div class="estilizar">
+            <div class="form-group">
+                <button name="regis" id="btnRegistrar" type="button" class="btn btn-light px-2"><i class="icon-lock"></i> Registrar</button>
+            </div>
+            
+            <div class="form-group">
+                <button name="regis" id="atualizar" type="button" class="btn btn-light px-2"><i class="icon-lock"></i> Atualizar</button>
+            </div>
+        
+            <!-- <input type="hidden" id="codigo" name="codigo" /> -->
+        
+            <div class="form-group">
+                <button name="regis" id="excluir" type="button" class="btn btn-light px-2"><i class="icon-lock"></i> Excluir</button>
+            </div>
+        </div>
+
+          <div id="mensagem">
+
+          </div>
+          <br>
+          <div class="container" id="espacoTabela">
+
           </div>
           </form>
          </div>
@@ -364,6 +378,8 @@
   <script src="assets/js/app-script.js"></script>
     <!-- Index js -->
     <script src="assets/js/index.js"></script>
+
+    <script src="./scripts/Evento.js"></script>
 
 	
 </body>
